@@ -1,0 +1,3 @@
+git checkout -b 3-services origin/3-services
+npms start
+npm run server // to start __server

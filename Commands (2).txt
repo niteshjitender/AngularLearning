@@ -1,0 +1,43 @@
+1.To Create new Project
+-ng new project_name
+2.To run Server
+-ng serve
+3.To Create Component
+-ng g C userList
+4.To Create Normal Module
+-ng g m users
+5.To Create component in specific Module
+-ng g c users/login
+	"Now exports login module from user module"
+		Syntax: exports:[
+			LoginComponent
+			]
+	
+	"Now Import users Module in app module"
+		Syntax: import {UsersModule} from './users/users.module'
+	"Add UsersModule in @NgModule-imports"
+		Syntax: imports:[
+			UserModules
+			]
+6. To install bootstrap
+-ng add @ng-bootstrap/ng-bootstrap
+7. To use forms 
+	"Import form Module in app module"
+		Syntax: import {FormModule} from '@angular/forms';
+	"Add UsersModule in @NgModule-imports"
+		Syntax: imports:[
+			FormModule 
+			]
+8. To install material
+-ng add @angular/material
+9. To add routing after project creation
+-ng generate module app-routing --flat --module=app
+10. To add custom directives
+-ng generate directive directive_name
+11. To add service
+-ng g service serviceName
+
+12. To create project with scss
+ng new project_name --style=scss
+13. To generate module with routing file
+ng g m module_name --routing
